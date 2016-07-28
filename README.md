@@ -1,17 +1,16 @@
-# nodedockertest
+## nodedockertest
 Example using official node docker image
 
-#Build
+##Build
 docker build . -t nodedockertest
 
-#run
+##run
 docker run nodedockertest
 
 
-#Package.json
-Take a look at the packge.json, the docker image will run 'npm install' and then 'node start'
-
-the install will pull all of the code and then start will run the script specified in the scripts configuraiton
+##The secret sauce Package.json
+#Take a look at the packge.json, the docker image will run 'npm install' and then 'node start'
+#The install will pull all of the code and then start will run the script specified in the scripts configuraiton
 
 {
   "name": "github-webhook-handler",
