@@ -1,6 +1,6 @@
 var http = require('http')
 var createHandler = require('github-webhook-handler')
-var handler = createHandler({ path: '/jimzucker', secret: 'Ejxa6DBDvkV7juPVjZZU' })
+var handler = createHandler({ path: '/jimzucker/nodedockertest', secret: 'Ejxa6DBDvkV7juPVjZZU' })
 
 http.createServer(function (req, res) {
   handler(req, res, function (err) {
